@@ -4,6 +4,7 @@ releases:
   1.0.1:
     changes:
       trivial:
+        - 'patch: New benbjohnson/litestream upstream release 0.5.2! (https://github.com/ceems-dev/ansible/pull/104)'
         - 'patch: New NVIDIA/dcgm-exporter upstream release 4.4.1-4.6.0! (https://github.com/ceems-dev/ansible/pull/103)'
         - 'patch: New benbjohnson/litestream upstream release 0.5.1! (https://github.com/ceems-dev/ansible/pull/102)'
         - 'patch: New benbjohnson/litestream upstream release 0.5.0! (https://github.com/ceems-dev/ansible/pull/101)'
