@@ -4,6 +4,9 @@ releases:
   1.0.1:
     changes:
       trivial:
+        - 'patch: New ceems-dev/ceems upstream release 0.12.1! (https://github.com/ceems-dev/ansible/pull/114)'
+        - 'patch: New ceems-dev/ceems upstream release 0.12.1! (https://github.com/ceems-dev/ansible/pull/113)'
+        - 'patch: New ceems-dev/ceems upstream release 0.12.1! (https://github.com/ceems-dev/ansible/pull/112)'
         - 'patch: New benbjohnson/litestream upstream release 0.5.5! (https://github.com/ceems-dev/ansible/pull/111)'
         - 'patch: New NVIDIA/dcgm-exporter upstream release 4.4.2-4.7.1! (https://github.com/ceems-dev/ansible/pull/109)'
         - 'patch: New ceems-dev/ceems upstream release 0.12.0! (https://github.com/ceems-dev/ansible/pull/107)'
