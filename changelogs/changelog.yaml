@@ -4,6 +4,9 @@ releases:
   1.0.1:
     changes:
       trivial:
+        - 'patch: New ceems-dev/ceems upstream release 0.12.2! (https://github.com/ceems-dev/ansible/pull/118)'
+        - 'patch: New ceems-dev/ceems upstream release 0.12.2! (https://github.com/ceems-dev/ansible/pull/117)'
+        - 'patch: New ceems-dev/ceems upstream release 0.12.2! (https://github.com/ceems-dev/ansible/pull/116)'
         - 'patch: New benbjohnson/litestream upstream release 0.5.6! (https://github.com/ceems-dev/ansible/pull/115)'
         - 'patch: New ceems-dev/ceems upstream release 0.12.1! (https://github.com/ceems-dev/ansible/pull/114)'
         - 'patch: New ceems-dev/ceems upstream release 0.12.1! (https://github.com/ceems-dev/ansible/pull/113)'
