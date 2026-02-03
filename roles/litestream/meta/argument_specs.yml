@@ -10,7 +10,7 @@ argument_specs:
     options:
       litestream_version:
         description: Litestream package version. Also accepts latest as parameter.
-        default: "0.5.6"
+        default: "0.5.7"
       litestream_skip_install:
         description: Litestream installation tasks gets skipped when set to true.
         type: bool
