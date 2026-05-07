@@ -1,5 +1,5 @@
 ---
-nvidia_dcgm_exporter_version: 4.5.2-4.8.1
+nvidia_dcgm_exporter_version: 4.5.3-4.8.2
 
 nvidia_dcgm_exporter_binary_local_dir: ""
 
