@@ -14,9 +14,11 @@ jobs:
       pull-requests: write
     steps:
       - name: Confirm correct pull request title
-        uses: mmubeen/action-pr-title@master  # until PR gets merged https://github.com/deepakputhraya/action-pr-title/pull/29
+        uses: deepakputhraya/action-pr-title@077bddd7bdabd0d2b1b25ed0754c7e62e184d7ee
         with:
-          allowed_prefixes: feat,feature,fix,major,breaking,minor,enhancement,deprecated,removed,security,bug,bugfix,docs,packaging,test,refactor,refactoring,skip-release,skip_changelog,patch
+          allowed_prefixes: "breaking,chore,feat,feature,fix,major,minor,enhancement,\
+           deprecated,removed,security,bug,bugfix,docs,packaging,\
+           test,refactor,refactoring,skip-release,skip_changelog,patch"
 
       - name: Apply label
         if: github.event.pull_request.labels.length == 0
@@ -24,26 +26,27 @@ jobs:
         with:
           type_labels: |
             {
-            "feature": "enhancement",
-            "feat": "enhancement",
-            "fix": "bugfix",
-            "major": "major",
-            "breaking": "breaking",
-            "minor": "minor",
-            "enhancement": "enhancement",
-            "deprecated": "deprecated",
-            "removed": "removed",
-            "security": "security",
-            "bug": "bug",
-            "bugfix": "bugfix",
-            "docs": "trivial",
-            "packaging": "trivial",
-            "test": "trivial",
-            "refactor": "trivial",
-            "refactoring": "trivial",
-            "skip-release": "skip_changelog",
-            "skip_changelog": "skip_changelog",
-            "patch": "trivial"
+              "feature": "enhancement",
+              "feat": "enhancement",
+              "fix": "bugfix",
+              "major": "major",
+              "breaking": "breaking",
+              "minor": "minor",
+              "enhancement": "enhancement",
+              "deprecated": "deprecated",
+              "removed": "removed",
+              "security": "security",
+              "bug": "bug",
+              "bugfix": "bugfix",
+              "docs": "trivial",
+              "packaging": "trivial",
+              "test": "trivial",
+              "refactor": "trivial",
+              "refactoring": "trivial",
+              "skip-release": "skip_changelog",
+              "skip_changelog": "skip_changelog",
+              "patch": "trivial",
+              "chore": "trivial"
             }
 
   role-label:
