@@ -4,6 +4,7 @@ releases:
   1.0.1:
     changes:
       trivial:
+        - 'chore(ci): Add dependabot config (https://github.com/ceems-dev/ansible/pull/138)'
         - 'patch: New ceems-dev/ceems upstream release 0.14.0! (https://github.com/ceems-dev/ansible/pull/137)'
         - 'patch: New ceems-dev/ceems upstream release 0.14.0! (https://github.com/ceems-dev/ansible/pull/136)'
         - 'patch: New ceems-dev/ceems upstream release 0.14.0! (https://github.com/ceems-dev/ansible/pull/135)'
