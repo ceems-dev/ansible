@@ -4,6 +4,7 @@ releases:
   1.0.1:
     changes:
       trivial:
+        - 'docs: Update README (https://github.com/ceems-dev/ansible/pull/140)'
         - 'chore(deps): bump the actions-dependencies group across 1 directory with
           5 updates (https://github.com/ceems-dev/ansible/pull/139)'
         - 'chore(ci): Add dependabot config (https://github.com/ceems-dev/ansible/pull/138)'
