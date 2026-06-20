@@ -4,6 +4,8 @@ releases:
   1.0.2:
     changes:
       trivial:
+        - 'chore(deps): bump actions/checkout from 6 to 7 in the actions-dependencies
+          group (https://github.com/ceems-dev/ansible/pull/147)'
         - 'patch: New ceems-dev/ceems upstream release 0.14.2! (https://github.com/ceems-dev/ansible/pull/146)'
         - 'patch: New ceems-dev/ceems upstream release 0.14.2! (https://github.com/ceems-dev/ansible/pull/145)'
         - 'patch: New ceems-dev/ceems upstream release 0.14.2! (https://github.com/ceems-dev/ansible/pull/144)'
