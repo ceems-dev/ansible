@@ -66,7 +66,7 @@
         mode: "0755"
         owner: root
         group: root
-      when: 
+      when:
         - not ansible_check_mode
         - ceems_api_server_install_ceems_tool
 
