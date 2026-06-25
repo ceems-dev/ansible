@@ -59,6 +59,17 @@
       notify: restart ceems_api_server
       when: not ansible_check_mode
 
+    - name: Propagate ceems_tool binaries
+      ansible.builtin.copy:
+        src: /tmp/ceems-{{ ceems_api_server_version }}.linux-{{ go_arch }}/ceems_tool
+        dest: "{{ ceems_api_server_binary_install_dir }}/ceems_tool"
+        mode: "0755"
+        owner: root
+        group: root
+      when: 
+        - not ansible_check_mode
+        - ceems_api_server_install_ceems_tool
+
 - name: Propagate locally distributed ceems_api_server binary
   ansible.builtin.copy:
     src: "{{ ceems_api_server_binary_local_dir }}/ceems_api_server"
@@ -70,3 +81,15 @@
     - ceems_api_server_binary_local_dir | length > 0
     - not ceems_api_server_skip_install
   notify: restart ceems_api_server
+
+- name: Propagate locally distributed ceems_tool binary
+  ansible.builtin.copy:
+    src: "{{ ceems_api_server_binary_local_dir }}/ceems_tool"
+    dest: "{{ ceems_api_server_binary_install_dir }}/ceems_tool"
+    mode: "0755"
+    owner: root
+    group: root
+  when:
+    - ceems_api_server_binary_local_dir | length > 0
+    - not ceems_api_server_skip_install
+    - ceems_api_server_install_ceems_tool

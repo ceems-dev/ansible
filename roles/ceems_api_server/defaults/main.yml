@@ -6,6 +6,7 @@ ceems_api_server_binary_url: "https://github.com/{{ _ceems_api_server_repo }}/re
 ceems_api_server_checksums_url: "https://github.com/{{ _ceems_api_server_repo }}/releases/download/\
                               v{{ ceems_api_server_version }}/sha256sums.txt"
 ceems_api_server_skip_install: false
+ceems_api_server_install_ceems_tool: true
 
 ceems_api_server_web_listen_address: "0.0.0.0:9020"
 
