@@ -10,8 +10,10 @@ User={{ litestream_system_user }}
 Group={{ litestream_system_group }}
 ExecStart={{ litestream_binary_install_dir }}/litestream \
     replicate \
+{% for cli_arg in litestream_cli_args %}
+    {{ cli_arg }} \
+{% endfor %}
     -config=/etc/litestream/config.yml
-
 SyslogIdentifier=litestream
 Restart=always
 RestartSec=1
