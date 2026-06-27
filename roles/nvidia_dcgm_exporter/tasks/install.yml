@@ -69,6 +69,7 @@
         target: binary
         params:
           GO: /tmp/go/bin/go
+          GOLANG_VERSION: "{{ _golang_version }}"
       delegate_to: localhost
       environment:
         PATH: "/tmp/go/bin:{{ ansible_env.PATH }}"

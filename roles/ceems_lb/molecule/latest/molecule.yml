@@ -8,5 +8,6 @@ provisioner:
           strategy: round-robin
           backends:
             - id: default
-              tsdb_urls:
-                - http://localhost:9090
+              tsdb:
+                - web:
+                    url: http://localhost:9090
