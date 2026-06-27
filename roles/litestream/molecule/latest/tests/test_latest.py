@@ -12,7 +12,7 @@ testinfra_hosts = testinfra.utils.ansible_runner.AnsibleRunner(
 @pytest.mark.parametrize("dir", [
     "/etc/litestream",
     "/var/lib/backup",
-    "/var/lib/backup/generations"
+    "/var/lib/backup/ltx"
 ])
 def test_directories(host, dir):
     d = host.file(dir)
