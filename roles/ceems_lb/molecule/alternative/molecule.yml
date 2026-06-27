@@ -10,7 +10,7 @@ provisioner:
           strategy: round-robin
           backends:
             - id: default
-              tsdb: 
+              tsdb:
                 - web:
                     url: http://localhost:9090
               pyroscope:
