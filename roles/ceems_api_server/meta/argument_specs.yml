@@ -15,10 +15,14 @@ argument_specs:
         description: CEEMS API server installation tasks gets skipped when set to true.
         type: bool
         default: false
+      ceems_api_server_install_ceems_tool:
+        description: Installs L(`ceems_tool` docs,https://ceems-dev.github.io/ceems/docs/usage/ceems-tool) when set to true.
+        type: bool
+        default: true
       ceems_api_server_binary_local_dir:
         description:
           - Enables the use of local packages instead of those distributed on github.
-          - The parameter may be set to a directory where the C(ceems_api_server) binary is stored on the host where ansible is run.
+          - The parameter may be set to a directory where the C(ceems_api_server) and C(ceems_tool) binaries are stored on the host where ansible is run.
           - This overrides the I(ceems_api_server_version) parameter
       ceems_api_server_binary_url:
         description: URL of the ceems API server binaries .tar.gz file

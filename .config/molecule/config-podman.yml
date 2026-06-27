@@ -5,83 +5,73 @@ prerun: false
 driver:
   name: podman
 platforms:
-  # - name: almalinux-8
-  #   image: dokken/almalinux-8
-  #   pre_build_image: true
-  #   privileged: true
-  #   cgroup_parent: docker.slice
-  #   command: /lib/systemd/systemd
-  # - name: almalinux-9
-  #   image: dokken/almalinux-9
-  #   pre_build_image: true
-  #   privileged: true
-  #   cgroup_parent: docker.slice
-  #   command: /lib/systemd/systemd
-  # - name: centos-7
-  #   image: dokken/centos-7
-  #   pre_build_image: true
-  #   privileged: true
-  #   cgroup_parent: docker.slice
-  #   command: /usr/lib/systemd/systemd
-  # - name: centos-stream-8
-  #   image: dokken/centos-stream-8
-  #   pre_build_image: true
-  #   privileged: true
-  #   cgroup_parent: docker.slice
-  #   command: /lib/systemd/systemd
-  # - name: centos-stream-9
-  #   image: dokken/centos-stream-9
-  #   pre_build_image: true
-  #   privileged: true
-  #   cgroup_parent: docker.slice
-  #   command: /lib/systemd/systemd
-  - name: debian-10
-    image: dokken/debian-10
+  - name: almalinux-9
+    image: ghcr.io/test-kitchen/dokken/almalinux-9:sha-03eabbc
+    pre_build_image: true
+    privileged: true
+    cgroup_parent: docker.slice
+    command: /lib/systemd/systemd
+  - name: almalinux-10
+    image: ghcr.io/test-kitchen/dokken/almalinux-10:sha-03eabbc
     pre_build_image: true
     privileged: true
     cgroup_parent: docker.slice
     command: /lib/systemd/systemd
   - name: debian-11
-    image: dokken/debian-11
+    image: ghcr.io/test-kitchen/dokken/debian-11
     pre_build_image: true
     privileged: true
     cgroup_parent: docker.slice
     command: /lib/systemd/systemd
-  - name: fedora-37
-    image: dokken/fedora-37
-    pre_build_image: true
-    privileged: true
-    cgroup_parent: docker.slice
-    command: /lib/systemd/systemd
-  - name: fedora-38
-    image: dokken/fedora-38
-    pre_build_image: true
-    privileged: true
-    cgroup_parent: docker.slice
-    command: /lib/systemd/systemd
-  - name: ubuntu-20.04
-    image: dokken/ubuntu-20.04
+  - name: debian-12
+    image: ghcr.io/test-kitchen/dokken/debian-12
     pre_build_image: true
     privileged: true
     cgroup_parent: docker.slice
     command: /lib/systemd/systemd
   - name: ubuntu-22.04
-    image: dokken/ubuntu-22.04
+    image: ghcr.io/test-kitchen/dokken/ubuntu-22.04
     pre_build_image: true
     privileged: true
     cgroup_parent: docker.slice
     command: /lib/systemd/systemd
   - name: ubuntu-24.04
-    image: dokken/ubuntu-24.04
+    image: ghcr.io/test-kitchen/dokken/ubuntu-24.04
     pre_build_image: true
     privileged: true
     cgroup_parent: docker.slice
     command: /lib/systemd/systemd
 verifier:
   name: testinfra
-  directory: ${MOLECULE_SCENARIO_DIRECTORY}/tests
-  options:
-    rootdir: ${MOLECULE_SCENARIO_DIRECTORY}
+  env:
+    PYTHONPATH: "${MOLECULE_PROJECT_DIRECTORY}/../../.testinfra:${PYTHONPATH}"
 provisioner:
+  env:
+    ANSIBLE_INJECT_FACT_VARS: false
   playbooks:
-    converge: ${MOLECULE_PROJECT_DIRECTORY}/../../.config/molecule/converge.yml
+    converge: "${MOLECULE_PROJECT_DIRECTORY}/../../.config/molecule/converge.yml"
+  inventory:
+    hosts:
+      target_hosts:
+        hosts: {}
+    host_vars:
+      almalinux-9:
+        ansible_become_method: su
+        # Python 3.9, ansible-core support 2.14 to 2.15
+        exclude_ansible_vers: ["2.16", "2.17", "2.18", "2.19", "2.20", "2.21"]
+      almalinux-10:
+        ansible_become_method: su
+        # Python 3.12, ansible-core support 2.16 to 2.21
+        exclude_ansible_vers: ["2.14", "2.15"]
+      debian-11:
+        # Python 3.9, ansible-core support 2.14 to 2.15
+        exclude_ansible_vers: ["2.16", "2.17", "2.18", "2.19", "2.20", "2.21"]
+      debian-12:
+        # Python 3.11, ansible-core support 2.14 to 2.19
+        exclude_ansible_vers: ["2.20", "2.21"]
+      ubuntu-22.04:
+        # Python 3.10, ansible-core support 2.12 to 2.17
+        exclude_ansible_vers: ["2.18", "2.19", "2.20", "2.21"]
+      ubuntu-24.04:
+        # Python 3.12, ansible-core support 2.16 to 2.21
+        exclude_ansible_vers: ["2.14", "2.15"]

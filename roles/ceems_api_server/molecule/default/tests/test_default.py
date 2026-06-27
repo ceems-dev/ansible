@@ -20,7 +20,8 @@ def test_directories(host, dir):
 
 @pytest.mark.parametrize("file", [
     "/etc/systemd/system/ceems_api_server.service",
-    "/usr/local/bin/ceems_api_server"
+    "/usr/local/bin/ceems_api_server",
+    "/usr/local/bin/ceems_tool"
 ])
 def test_files(host, file):
     f = host.file(file)

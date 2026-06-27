@@ -59,7 +59,6 @@
         repo: "{{ nvidia_dcgm_exporter_git_url }}"
         dest: /tmp/nvidia_dcgm_exporter
         version: "{{ nvidia_dcgm_exporter_version }}"
-      register: _clone_repo
       delegate_to: localhost
 
     - name: Compile dcgm-exporter binary
