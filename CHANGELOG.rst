@@ -4,6 +4,14 @@ ceems.Ansible Release Notes
 
 .. contents:: Topics
 
+v1.1.0
+======
+
+Minor Changes
+-------------
+
+- feat: Install ceems_tool along with ceems_api_server (https://github.com/ceems-dev/ansible/pull/151)
+
 v1.0.2
 ======
 
