@@ -67,6 +67,8 @@
       community.general.make:
         chdir: /tmp/nvidia_dcgm_exporter
         target: binary
+        params:
+          GO: /tmp/go/bin/go
       delegate_to: localhost
       environment:
         PATH: "/tmp/go/bin:{{ ansible_env.PATH }}"
