@@ -36,7 +36,7 @@
       become: true
       tags:
         - ceems_api_server_configure
-  when: ansible_selinux.status == "enabled"
+  when: ansible_facts.selinux.status == "enabled"
   tags:
     - ceems_api_server_configure
 
