@@ -8,6 +8,8 @@ on:
       - reopened
       - synchronize
       - labeled
+  schedule:
+    - cron: "5 4 * * 1"
   workflow_dispatch:
 
 concurrency:
@@ -82,13 +84,28 @@ jobs:
         with:
           script: |
             const { owner, repo } = context.repo;
-            const issue_number = context.issue.number;
+            const eventName = context.eventName;
+            let labels = new Array();
+            // For schedule jobs, add all roles to tests by fetching all possible labels
+            if (eventName === "schedule") {
+              const allLabels = await github.paginate(
+                github.rest.issues.listLabelsForRepo,
+                { owner, repo }
+              );
 
-            const labels = await github.paginate(
-              github.rest.issues.listLabelsOnIssue,
-              { owner, repo, issue_number }
-            );
+              for (const label of allLabels) {
+                if (label.name.startsWith("roles/")) {
+                  labels.push(label.name);
+                }
+              }
+            } else {
+              const issue_number = context.issue.number;
 
+              labels = await github.paginate(
+                github.rest.issues.listLabelsOnIssue,
+                { owner, repo, issue_number }
+              );
+            }
             const names = labels.map(l => l.name);
             core.info(`Current labels: ${names.join(', ') || '(none)'}`);
             core.setOutput('names', JSON.stringify(names));

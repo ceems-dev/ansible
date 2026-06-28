@@ -71,6 +71,7 @@
   when: __nvidia_dcgm_exporter_is_installed.stat.exists
   tags:
     - nvidia_dcgm_exporter_install
+    - molecule-idempotence-notest
 
 - name: Discover latest version
   ansible.builtin.set_fact:

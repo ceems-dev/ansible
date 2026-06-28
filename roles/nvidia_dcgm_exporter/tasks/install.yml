@@ -25,8 +25,6 @@
   when:
     - nvidia_dcgm_exporter_binary_local_dir | length == 0
     - not nvidia_dcgm_exporter_skip_install
-  tags:
-    - molecule-idempotence-notest
   block:
     - name: Download golang to local folder
       become: false
@@ -67,6 +65,9 @@
       community.general.make:
         chdir: /tmp/nvidia_dcgm_exporter
         target: binary
+        params:
+          GO: /tmp/go/bin/go
+          GOLANG_VERSION: "{{ _golang_version }}"
       delegate_to: localhost
       environment:
         PATH: "/tmp/go/bin:{{ ansible_env.PATH }}"

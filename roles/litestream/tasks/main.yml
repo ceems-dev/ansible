@@ -22,9 +22,9 @@
   when:
     ( not __litestream_is_installed.stat.exists ) or
       ( (__litestream_current_version_output.stderr_lines | length > 0) and
-      (__litestream_current_version_output.stderr_lines[0].split("v")[1] != litestream_version) ) or
+      (__litestream_current_version_output.stderr_lines[0] != litestream_version) ) or
       ( (__litestream_current_version_output.stdout_lines | length > 0) and
-      (__litestream_current_version_output.stdout_lines[0].split("v")[1] != litestream_version) ) or
+      (__litestream_current_version_output.stdout_lines[0] != litestream_version) ) or
       ( litestream_binary_local_dir | length> 0
     )
   tags:

@@ -3,7 +3,7 @@ nvidia_dcgm_exporter_version: 4.5.3-4.8.2
 
 nvidia_dcgm_exporter_binary_local_dir: ""
 
-nvidia_dcgm_exporter_git_url: https://github.com/NVIDIA/dcgm-exporter.git
+nvidia_dcgm_exporter_git_url: https://github.com/{{ _nvidia_dcgm_exporter_repo }}.git
 nvidia_dcgm_exporter_skip_install: false
 
 nvidia_dcgm_exporter_web_listen_address: "0.0.0.0:9400"

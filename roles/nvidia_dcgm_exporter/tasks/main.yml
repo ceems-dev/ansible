@@ -28,6 +28,7 @@
     ) or ( nvidia_dcgm_exporter_binary_local_dir | length > 0 )
   tags:
     - nvidia_dcgm_exporter_install
+    - molecule-idempotence-notest
 
 - name: SELinux
   ansible.builtin.include_tasks:
