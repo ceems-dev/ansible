@@ -9,6 +9,7 @@ releases:
         - 'refactor: Replace all deprecated calls to ansible_facts (https://github.com/ceems-dev/ansible/pull/154)'
         - 'chore(deps): bump actions/checkout from 6 to 7 in the actions-dependencies
           group (https://github.com/ceems-dev/ansible/pull/153)'
+        - 'patch: New ceems-dev/ceems upstream release 0.14.3! (https://github.com/ceems-dev/ansible/pull/152)'
         - 'patch: New ceems-dev/ceems upstream release 0.14.3! (https://github.com/ceems-dev/ansible/pull/150)'
         - 'patch: New ceems-dev/ceems upstream release 0.14.3! (https://github.com/ceems-dev/ansible/pull/149)'
         - 'patch: New ceems-dev/ceems upstream release 0.14.3! (https://github.com/ceems-dev/ansible/pull/148)'
