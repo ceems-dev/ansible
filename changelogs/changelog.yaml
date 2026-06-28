@@ -6,6 +6,7 @@ releases:
       minor_changes:
         - 'feat: Install ceems_tool along with ceems_api_server (https://github.com/ceems-dev/ansible/pull/151)'
       trivial:
+        - 'refactor: Replace all deprecated calls to ansible_facts (https://github.com/ceems-dev/ansible/pull/154)'
         - 'patch: New ceems-dev/ceems upstream release 0.14.3! (https://github.com/ceems-dev/ansible/pull/150)'
         - 'patch: New ceems-dev/ceems upstream release 0.14.3! (https://github.com/ceems-dev/ansible/pull/149)'
         - 'patch: New ceems-dev/ceems upstream release 0.14.3! (https://github.com/ceems-dev/ansible/pull/148)'
