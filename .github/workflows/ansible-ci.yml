@@ -95,7 +95,7 @@ jobs:
 
               for (const label of allLabels) {
                 if (label.name.startsWith("roles/")) {
-                  labels.push(label.name);
+                  labels.push(label);
                 }
               }
             } else {
