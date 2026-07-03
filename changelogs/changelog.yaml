@@ -1,239 +1,243 @@
-ancestor: null
+---
+ancestor:
 releases:
-  0.1.0:
-    release_date: '2024-02-26'
-  0.1.1:
-    changes:
-      bugfixes:
-      - 'bugfix: Minor fixes (https://github.com/ceems-dev/ansible/pull/4)'
-    release_date: '2024-02-29'
-  0.1.2:
+  1.1.2:
     changes:
       trivial:
-      - 'patch: New NVIDIA/dcgm-exporter upstream release 3.3.5-3.4.0! (https://github.com/ceems-dev/ansible/pull/5)'
-    release_date: '2024-02-29'
-  0.2.0:
+        - 'patch: Add discord notification for schedule pipelines (https://github.com/ceems-dev/ansible/pull/157)'
+    release_date: '2026-07-02'
+  1.1.1:
+    changes:
+      trivial:
+        - 'patch: New benbjohnson/litestream upstream release 0.5.13! (https://github.com/ceems-dev/ansible/pull/155)'
+    release_date: '2026-07-01'
+  1.1.0:
     changes:
       minor_changes:
-      - 'feat: Add litestream role (https://github.com/ceems-dev/ansible/pull/6)'
-    release_date: '2024-03-02'
-  0.2.1:
+        - 'feat: Install ceems_tool along with ceems_api_server (https://github.com/ceems-dev/ansible/pull/151)'
+      trivial:
+        - 'refactor: Replace all deprecated calls to ansible_facts (https://github.com/ceems-dev/ansible/pull/154)'
+        - 'chore(deps): bump actions/checkout from 6 to 7 in the actions-dependencies
+          group (https://github.com/ceems-dev/ansible/pull/153)'
+        - 'patch: New ceems-dev/ceems upstream release 0.14.3! (https://github.com/ceems-dev/ansible/pull/152)'
+        - 'patch: New ceems-dev/ceems upstream release 0.14.3! (https://github.com/ceems-dev/ansible/pull/150)'
+        - 'patch: New ceems-dev/ceems upstream release 0.14.3! (https://github.com/ceems-dev/ansible/pull/149)'
+        - 'patch: New ceems-dev/ceems upstream release 0.14.3! (https://github.com/ceems-dev/ansible/pull/148)'
+        - 'chore(deps): bump actions/checkout from 6 to 7 in the actions-dependencies
+          group (https://github.com/ceems-dev/ansible/pull/147)'
+        - 'patch: New ceems-dev/ceems upstream release 0.14.2! (https://github.com/ceems-dev/ansible/pull/146)'
+        - 'patch: New ceems-dev/ceems upstream release 0.14.2! (https://github.com/ceems-dev/ansible/pull/145)'
+        - 'patch: New ceems-dev/ceems upstream release 0.14.2! (https://github.com/ceems-dev/ansible/pull/144)'
+        - 'patch: New ceems-dev/ceems upstream release 0.14.1! (https://github.com/ceems-dev/ansible/pull/143)'
+        - 'patch: New ceems-dev/ceems upstream release 0.14.1! (https://github.com/ceems-dev/ansible/pull/142)'
+        - 'patch: New ceems-dev/ceems upstream release 0.14.1! (https://github.com/ceems-dev/ansible/pull/141)'
+    release_date: '2026-06-27'
+  1.0.2:
     changes:
       trivial:
-      - 'patch: Add ceems_lb molecule tests (https://github.com/ceems-dev/ansible/pull/7)'
+        - 'patch: New ceems-dev/ceems upstream release 0.14.3! (https://github.com/ceems-dev/ansible/pull/150)'
+        - 'patch: New ceems-dev/ceems upstream release 0.14.3! (https://github.com/ceems-dev/ansible/pull/149)'
+        - 'patch: New ceems-dev/ceems upstream release 0.14.3! (https://github.com/ceems-dev/ansible/pull/148)'
+        - 'chore(deps): bump actions/checkout from 6 to 7 in the actions-dependencies
+          group (https://github.com/ceems-dev/ansible/pull/147)'
+        - 'patch: New ceems-dev/ceems upstream release 0.14.2! (https://github.com/ceems-dev/ansible/pull/146)'
+        - 'patch: New ceems-dev/ceems upstream release 0.14.2! (https://github.com/ceems-dev/ansible/pull/145)'
+        - 'patch: New ceems-dev/ceems upstream release 0.14.2! (https://github.com/ceems-dev/ansible/pull/144)'
+        - 'patch: New ceems-dev/ceems upstream release 0.14.1! (https://github.com/ceems-dev/ansible/pull/143)'
+        - 'patch: New ceems-dev/ceems upstream release 0.14.1! (https://github.com/ceems-dev/ansible/pull/142)'
+        - 'patch: New ceems-dev/ceems upstream release 0.14.1! (https://github.com/ceems-dev/ansible/pull/141)'
+    release_date: '2026-06-13'
+  1.0.1:
+    changes:
+      trivial:
+        - 'docs: Update README (https://github.com/ceems-dev/ansible/pull/140)'
+        - 'chore(deps): bump the actions-dependencies group across 1 directory with
+          5 updates (https://github.com/ceems-dev/ansible/pull/139)'
+        - 'chore(ci): Add dependabot config (https://github.com/ceems-dev/ansible/pull/138)'
+        - 'patch: New ceems-dev/ceems upstream release 0.14.0! (https://github.com/ceems-dev/ansible/pull/137)'
+        - 'patch: New ceems-dev/ceems upstream release 0.14.0! (https://github.com/ceems-dev/ansible/pull/136)'
+        - 'patch: New ceems-dev/ceems upstream release 0.14.0! (https://github.com/ceems-dev/ansible/pull/135)'
+        - 'patch: New benbjohnson/litestream upstream release 0.5.12! (https://github.com/ceems-dev/ansible/pull/134)'
+        - 'patch: New ceems-dev/ceems upstream release 0.13.0! (https://github.com/ceems-dev/ansible/pull/133)'
+        - 'patch: New ceems-dev/ceems upstream release 0.13.0! (https://github.com/ceems-dev/ansible/pull/132)'
+        - 'patch: New ceems-dev/ceems upstream release 0.13.0! (https://github.com/ceems-dev/ansible/pull/131)'
+        - 'patch: New NVIDIA/dcgm-exporter upstream release 4.5.3-4.8.2! (https://github.com/ceems-dev/ansible/pull/130)'
+        - 'patch: New benbjohnson/litestream upstream release 0.5.11! (https://github.com/ceems-dev/ansible/pull/129)'
+        - 'patch: New benbjohnson/litestream upstream release 0.5.10! (https://github.com/ceems-dev/ansible/pull/128)'
+        - 'patch: New ceems-dev/ceems upstream release 0.12.3! (https://github.com/ceems-dev/ansible/pull/127)'
+        - 'patch: New ceems-dev/ceems upstream release 0.12.3! (https://github.com/ceems-dev/ansible/pull/126)'
+        - 'patch: New ceems-dev/ceems upstream release 0.12.3! (https://github.com/ceems-dev/ansible/pull/125)'
+        - 'patch: New ceems-dev/ceems upstream release 0.12.3! (https://github.com/ceems-dev/ansible/pull/124)'
+        - 'patch: New benbjohnson/litestream upstream release 0.5.9! (https://github.com/ceems-dev/ansible/pull/123)'
+        - 'patch: New benbjohnson/litestream upstream release 0.5.8! (https://github.com/ceems-dev/ansible/pull/122)'
+        - 'patch: New NVIDIA/dcgm-exporter upstream release 4.5.2-4.8.1! (https://github.com/ceems-dev/ansible/pull/121)'
+        - 'patch: New benbjohnson/litestream upstream release 0.5.7! (https://github.com/ceems-dev/ansible/pull/120)'
+        - 'patch: New NVIDIA/dcgm-exporter upstream release 4.5.1-4.8.0! (https://github.com/ceems-dev/ansible/pull/119)'
+        - 'patch: New ceems-dev/ceems upstream release 0.12.2! (https://github.com/ceems-dev/ansible/pull/118)'
+        - 'patch: New ceems-dev/ceems upstream release 0.12.2! (https://github.com/ceems-dev/ansible/pull/117)'
+        - 'patch: New ceems-dev/ceems upstream release 0.12.2! (https://github.com/ceems-dev/ansible/pull/116)'
+        - 'patch: New benbjohnson/litestream upstream release 0.5.6! (https://github.com/ceems-dev/ansible/pull/115)'
+        - 'patch: New ceems-dev/ceems upstream release 0.12.1! (https://github.com/ceems-dev/ansible/pull/114)'
+        - 'patch: New ceems-dev/ceems upstream release 0.12.1! (https://github.com/ceems-dev/ansible/pull/113)'
+        - 'patch: New ceems-dev/ceems upstream release 0.12.1! (https://github.com/ceems-dev/ansible/pull/112)'
+        - 'patch: New benbjohnson/litestream upstream release 0.5.5! (https://github.com/ceems-dev/ansible/pull/111)'
+        - 'patch: New NVIDIA/dcgm-exporter upstream release 4.4.2-4.7.1! (https://github.com/ceems-dev/ansible/pull/109)'
+        - 'patch: New ceems-dev/ceems upstream release 0.12.0! (https://github.com/ceems-dev/ansible/pull/107)'
+        - 'patch: New ceems-dev/ceems upstream release 0.12.0! (https://github.com/ceems-dev/ansible/pull/106)'
+        - 'patch: New ceems-dev/ceems upstream release 0.12.0! (https://github.com/ceems-dev/ansible/pull/105)'
+        - 'patch: New benbjohnson/litestream upstream release 0.5.2! (https://github.com/ceems-dev/ansible/pull/104)'
+        - 'patch: New NVIDIA/dcgm-exporter upstream release 4.4.1-4.6.0! (https://github.com/ceems-dev/ansible/pull/103)'
+        - 'patch: New benbjohnson/litestream upstream release 0.5.1! (https://github.com/ceems-dev/ansible/pull/102)'
+        - 'patch: New benbjohnson/litestream upstream release 0.5.0! (https://github.com/ceems-dev/ansible/pull/101)'
+        - 'patch: New NVIDIA/dcgm-exporter upstream release 4.4.1-4.5.2! (https://github.com/ceems-dev/ansible/pull/100)'
+        - 'patch: New ceems-dev/ceems upstream release 0.11.2! (https://github.com/ceems-dev/ansible/pull/99)'
+        - 'patch: New ceems-dev/ceems upstream release 0.11.2! (https://github.com/ceems-dev/ansible/pull/98)'
+        - 'patch: New ceems-dev/ceems upstream release 0.11.2! (https://github.com/ceems-dev/ansible/pull/97)'
+        - 'patch: New ceems-dev/ceems upstream release 0.11.1! (https://github.com/ceems-dev/ansible/pull/96)'
+        - 'patch: New ceems-dev/ceems upstream release 0.11.1! (https://github.com/ceems-dev/ansible/pull/95)'
+        - 'patch: New ceems-dev/ceems upstream release 0.11.1! (https://github.com/ceems-dev/ansible/pull/94)'
+        - 'patch: New ceems-dev/ceems upstream release 0.11.0! (https://github.com/ceems-dev/ansible/pull/93)'
+        - 'patch: New ceems-dev/ceems upstream release 0.11.0! (https://github.com/ceems-dev/ansible/pull/92)'
+        - 'patch: New NVIDIA/dcgm-exporter upstream release 4.4.0-4.5.0! (https://github.com/ceems-dev/ansible/pull/91)'
+        - 'patch: New ceems-dev/ceems upstream release 0.11.0! (https://github.com/ceems-dev/ansible/pull/90)'
+    release_date: '2025-09-05'
+  1.0.0:
+    changes:
+      major_changes:
+        - 'major: Bump version to next sem ver (https://github.com/ceems-dev/ansible/pull/89)'
+      trivial:
+        - 'refactor: Migrate to ceems-dev org (https://github.com/ceems-dev/ansible/pull/88)'
+        - 'patch: New NVIDIA/dcgm-exporter upstream release 4.2.3-4.2.0! (https://github.com/ceems-dev/ansible/pull/84)'
+        - 'patch: New mahendrapaipuri/ceems upstream release 0.9.1! (https://github.com/ceems-dev/ansible/pull/83)'
+        - 'patch: New mahendrapaipuri/ceems upstream release 0.9.1! (https://github.com/ceems-dev/ansible/pull/82)'
+        - 'patch: New mahendrapaipuri/ceems upstream release 0.9.1! (https://github.com/ceems-dev/ansible/pull/81)'
+        - 'patch: New mahendrapaipuri/ceems upstream release 0.9.1! (https://github.com/ceems-dev/ansible/pull/80)'
+        - 'patch: New mahendrapaipuri/ceems upstream release 0.9.0! (https://github.com/ceems-dev/ansible/pull/79)'
+        - 'patch: New mahendrapaipuri/ceems upstream release 0.9.0! (https://github.com/ceems-dev/ansible/pull/78)'
+        - 'patch: New mahendrapaipuri/ceems upstream release 0.9.0! (https://github.com/ceems-dev/ansible/pull/77)'
+        - 'patch: New NVIDIA/dcgm-exporter upstream release 4.2.3-4.1.3! (https://github.com/ceems-dev/ansible/pull/76)'
+        - 'patch: New mahendrapaipuri/ceems upstream release 0.8.0! (https://github.com/ceems-dev/ansible/pull/75)'
+        - 'patch: New mahendrapaipuri/ceems upstream release 0.8.0! (https://github.com/ceems-dev/ansible/pull/74)'
+        - 'patch: New mahendrapaipuri/ceems upstream release 0.8.0! (https://github.com/ceems-dev/ansible/pull/73)'
+        - 'patch: New mahendrapaipuri/ceems upstream release 0.7.2! (https://github.com/ceems-dev/ansible/pull/72)'
+        - 'patch: New mahendrapaipuri/ceems upstream release 0.7.2! (https://github.com/ceems-dev/ansible/pull/71)'
+        - 'patch: New mahendrapaipuri/ceems upstream release 0.7.2! (https://github.com/ceems-dev/ansible/pull/70)'
+        - 'patch: New NVIDIA/dcgm-exporter upstream release 4.2.0-4.1.0! (https://github.com/ceems-dev/ansible/pull/69)'
+        - 'patch: New mahendrapaipuri/ceems upstream release 0.7.1! (https://github.com/ceems-dev/ansible/pull/68)'
+        - 'patch: New mahendrapaipuri/ceems upstream release 0.7.1! (https://github.com/ceems-dev/ansible/pull/67)'
+        - 'patch: New mahendrapaipuri/ceems upstream release 0.7.1! (https://github.com/ceems-dev/ansible/pull/66)'
+    release_date: '2025-07-22'
+  0.4.3:
+    changes:
+      trivial:
+        - 'refactor: Migrate to ceems-dev org (https://github.com/ceems-dev/ansible/pull/88)'
+        - 'patch: New NVIDIA/dcgm-exporter upstream release 4.2.3-4.2.0! (https://github.com/ceems-dev/ansible/pull/84)'
+        - 'patch: New mahendrapaipuri/ceems upstream release 0.9.1! (https://github.com/ceems-dev/ansible/pull/83)'
+        - 'patch: New mahendrapaipuri/ceems upstream release 0.9.1! (https://github.com/ceems-dev/ansible/pull/82)'
+        - 'patch: New mahendrapaipuri/ceems upstream release 0.9.1! (https://github.com/ceems-dev/ansible/pull/81)'
+        - 'patch: New mahendrapaipuri/ceems upstream release 0.9.1! (https://github.com/ceems-dev/ansible/pull/80)'
+        - 'patch: New mahendrapaipuri/ceems upstream release 0.9.0! (https://github.com/ceems-dev/ansible/pull/79)'
+        - 'patch: New mahendrapaipuri/ceems upstream release 0.9.0! (https://github.com/ceems-dev/ansible/pull/78)'
+        - 'patch: New mahendrapaipuri/ceems upstream release 0.9.0! (https://github.com/ceems-dev/ansible/pull/77)'
+        - 'patch: New NVIDIA/dcgm-exporter upstream release 4.2.3-4.1.3! (https://github.com/ceems-dev/ansible/pull/76)'
+        - 'patch: New mahendrapaipuri/ceems upstream release 0.8.0! (https://github.com/ceems-dev/ansible/pull/75)'
+        - 'patch: New mahendrapaipuri/ceems upstream release 0.8.0! (https://github.com/ceems-dev/ansible/pull/74)'
+        - 'patch: New mahendrapaipuri/ceems upstream release 0.8.0! (https://github.com/ceems-dev/ansible/pull/73)'
+        - 'patch: New mahendrapaipuri/ceems upstream release 0.7.2! (https://github.com/ceems-dev/ansible/pull/72)'
+        - 'patch: New mahendrapaipuri/ceems upstream release 0.7.2! (https://github.com/ceems-dev/ansible/pull/71)'
+        - 'patch: New mahendrapaipuri/ceems upstream release 0.7.2! (https://github.com/ceems-dev/ansible/pull/70)'
+        - 'patch: New NVIDIA/dcgm-exporter upstream release 4.2.0-4.1.0! (https://github.com/ceems-dev/ansible/pull/69)'
+        - 'patch: New mahendrapaipuri/ceems upstream release 0.7.1! (https://github.com/ceems-dev/ansible/pull/68)'
+        - 'patch: New mahendrapaipuri/ceems upstream release 0.7.1! (https://github.com/ceems-dev/ansible/pull/67)'
+        - 'patch: New mahendrapaipuri/ceems upstream release 0.7.1! (https://github.com/ceems-dev/ansible/pull/66)'
+    release_date: '2025-03-25'
+  0.4.2:
+    changes:
+      trivial:
+        - 'patch: New ceems-dev/ceems upstream release 0.6.0! (https://github.com/ceems-dev/ansible/pull/61)'
+        - 'patch: New ceems-dev/ceems upstream release 0.6.0! (https://github.com/ceems-dev/ansible/pull/60)'
+        - 'patch: New NVIDIA/dcgm-exporter upstream release 4.1.1-4.0.4! (https://github.com/ceems-dev/ansible/pull/59)'
+        - 'patch: New NVIDIA/dcgm-exporter upstream release 4.1.1-4.0.3! (https://github.com/ceems-dev/ansible/pull/58)'
+        - 'patch: New ceems-dev/ceems upstream release 0.5.3! (https://github.com/ceems-dev/ansible/pull/56)'
+        - 'patch: New ceems-dev/ceems upstream release 0.5.3! (https://github.com/ceems-dev/ansible/pull/55)'
+        - 'patch: New ceems-dev/ceems upstream release 0.5.3! (https://github.com/ceems-dev/ansible/pull/54)'
+        - 'patch: New ceems-dev/ceems upstream release 0.5.2! (https://github.com/ceems-dev/ansible/pull/53)'
+        - 'patch: New ceems-dev/ceems upstream release 0.5.2! (https://github.com/ceems-dev/ansible/pull/52)'
+        - 'patch: New ceems-dev/ceems upstream release 0.5.2! (https://github.com/ceems-dev/ansible/pull/51)'
+        - 'patch: Update ceems exporter and LB roles (https://github.com/ceems-dev/ansible/pull/47)'
+        - 'patch: New ceems-dev/ceems upstream release 0.5.0! (https://github.com/ceems-dev/ansible/pull/46)'
+        - 'patch: New ceems-dev/ceems upstream release 0.5.0! (https://github.com/ceems-dev/ansible/pull/45)'
+        - 'patch: New ceems-dev/ceems upstream release 0.5.0! (https://github.com/ceems-dev/ansible/pull/44)'
+        - 'patch: New NVIDIA/dcgm-exporter upstream release 3.3.9-3.6.1! (https://github.com/ceems-dev/ansible/pull/43)'
+        - 'patch: New ceems-dev/ceems upstream release 0.4.1! (https://github.com/ceems-dev/ansible/pull/42)'
+        - 'patch: New ceems-dev/ceems upstream release 0.4.1! (https://github.com/ceems-dev/ansible/pull/41)'
+        - 'patch: New ceems-dev/ceems upstream release 0.4.1! (https://github.com/ceems-dev/ansible/pull/40)'
+        - 'patch: New ceems-dev/ceems upstream release 0.3.1! (https://github.com/ceems-dev/ansible/pull/36)'
+        - 'patch: New ceems-dev/ceems upstream release 0.3.1! (https://github.com/ceems-dev/ansible/pull/35)'
+        - 'patch: New ceems-dev/ceems upstream release 0.3.1! (https://github.com/ceems-dev/ansible/pull/34)'
+        - 'patch: New NVIDIA/dcgm-exporter upstream release 3.3.8-3.6.0! (https://github.com/ceems-dev/ansible/pull/33)'
+        - 'patch: New ceems-dev/ceems upstream release 0.2.1! (https://github.com/ceems-dev/ansible/pull/29)'
+        - 'patch: New ceems-dev/ceems upstream release 0.2.1! (https://github.com/ceems-dev/ansible/pull/28)'
+        - 'patch: New ceems-dev/ceems upstream release 0.2.1! (https://github.com/ceems-dev/ansible/pull/27)'
+        - 'patch: New NVIDIA/dcgm-exporter upstream release 3.3.7-3.5.0! (https://github.com/ceems-dev/ansible/pull/23)'
+    release_date: '2024-08-27'
+  0.4.1:
+    changes:
+      trivial:
+        - 'patch: Format the config files properly (https://github.com/ceems-dev/ansible/pull/19)'
+    release_date: '2024-07-09'
+  0.4.0:
+    changes:
+      minor_changes:
+        - 'minor: Upgrade ceems roles (https://github.com/ceems-dev/ansible/pull/16)'
+      trivial:
+        - 'patch: New NVIDIA/dcgm-exporter upstream release 3.3.6-3.4.2! (https://github.com/ceems-dev/ansible/pull/14)'
+    release_date: '2024-07-09'
+  0.3.2:
+    changes:
+      trivial:
+        - 'patch: New NVIDIA/dcgm-exporter upstream release 3.3.6-3.4.2! (https://github.com/ceems-dev/ansible/pull/14)'
+    release_date: '2024-06-16'
+  0.3.1:
+    changes:
+      trivial:
+        - 'patch: Update `ceems_lb` config var (https://github.com/ceems-dev/ansible/pull/13)'
+        - 'patch: New NVIDIA/dcgm-exporter upstream release 3.3.5-3.4.1! (https://github.com/ceems-dev/ansible/pull/12)'
+    release_date: '2024-04-04'
+  0.3.0:
+    changes:
+      minor_changes:
+        - 'enhancement: Extra configs variable from CEEMS API server (https://github.com/ceems-dev/ansible/pull/11)'
+    release_date: '2024-04-04'
+  0.2.3:
+    changes:
+      bugfixes:
+        - 'bugfix: Correct ceems_api_server binary name (https://github.com/ceems-dev/ansible/pull/10)'
     release_date: '2024-03-02'
   0.2.2:
     changes:
       trivial:
-      - 'patch: Add create_system_user_group variable (https://github.com/ceems-dev/ansible/pull/9)'
+        - 'patch: Add create_system_user_group variable (https://github.com/ceems-dev/ansible/pull/9)'
     release_date: '2024-03-02'
-  0.2.3:
+  0.2.1:
+    changes:
+      trivial:
+        - 'patch: Add ceems_lb molecule tests (https://github.com/ceems-dev/ansible/pull/7)'
+    release_date: '2024-03-02'
+  0.2.0:
+    changes:
+      minor_changes:
+        - 'feat: Add litestream role (https://github.com/ceems-dev/ansible/pull/6)'
+    release_date: '2024-03-02'
+  0.1.2:
+    changes:
+      trivial:
+        - 'patch: New NVIDIA/dcgm-exporter upstream release 3.3.5-3.4.0! (https://github.com/ceems-dev/ansible/pull/5)'
+    release_date: '2024-02-29'
+  0.1.1:
     changes:
       bugfixes:
-      - 'bugfix: Correct ceems_api_server binary name (https://github.com/ceems-dev/ansible/pull/10)'
-    release_date: '2024-03-02'
-  0.3.0:
-    changes:
-      minor_changes:
-      - 'enhancement: Extra configs variable from CEEMS API server (https://github.com/ceems-dev/ansible/pull/11)'
-    release_date: '2024-04-04'
-  0.3.1:
-    changes:
-      trivial:
-      - 'patch: New NVIDIA/dcgm-exporter upstream release 3.3.5-3.4.1! (https://github.com/ceems-dev/ansible/pull/12)'
-      - 'patch: Update `ceems_lb` config var (https://github.com/ceems-dev/ansible/pull/13)'
-    release_date: '2024-04-04'
-  0.3.2:
-    changes:
-      trivial:
-      - 'patch: New NVIDIA/dcgm-exporter upstream release 3.3.6-3.4.2! (https://github.com/ceems-dev/ansible/pull/14)'
-    release_date: '2024-06-16'
-  0.4.0:
-    changes:
-      minor_changes:
-      - 'minor: Upgrade ceems roles (https://github.com/ceems-dev/ansible/pull/16)'
-      trivial:
-      - 'patch: New NVIDIA/dcgm-exporter upstream release 3.3.6-3.4.2! (https://github.com/ceems-dev/ansible/pull/14)'
-    release_date: '2024-07-09'
-  0.4.1:
-    changes:
-      trivial:
-      - 'patch: Format the config files properly (https://github.com/ceems-dev/ansible/pull/19)'
-    release_date: '2024-07-09'
-  0.4.2:
-    changes:
-      trivial:
-      - 'patch: New NVIDIA/dcgm-exporter upstream release 3.3.7-3.5.0! (https://github.com/ceems-dev/ansible/pull/23)'
-      - 'patch: New NVIDIA/dcgm-exporter upstream release 3.3.8-3.6.0! (https://github.com/ceems-dev/ansible/pull/33)'
-      - 'patch: New NVIDIA/dcgm-exporter upstream release 3.3.9-3.6.1! (https://github.com/ceems-dev/ansible/pull/43)'
-      - 'patch: New NVIDIA/dcgm-exporter upstream release 4.1.1-4.0.3! (https://github.com/ceems-dev/ansible/pull/58)'
-      - 'patch: New NVIDIA/dcgm-exporter upstream release 4.1.1-4.0.4! (https://github.com/ceems-dev/ansible/pull/59)'
-      - 'patch: New ceems-dev/ceems upstream release 0.2.1! (https://github.com/ceems-dev/ansible/pull/27)'
-      - 'patch: New ceems-dev/ceems upstream release 0.2.1! (https://github.com/ceems-dev/ansible/pull/28)'
-      - 'patch: New ceems-dev/ceems upstream release 0.2.1! (https://github.com/ceems-dev/ansible/pull/29)'
-      - 'patch: New ceems-dev/ceems upstream release 0.3.1! (https://github.com/ceems-dev/ansible/pull/34)'
-      - 'patch: New ceems-dev/ceems upstream release 0.3.1! (https://github.com/ceems-dev/ansible/pull/35)'
-      - 'patch: New ceems-dev/ceems upstream release 0.3.1! (https://github.com/ceems-dev/ansible/pull/36)'
-      - 'patch: New ceems-dev/ceems upstream release 0.4.1! (https://github.com/ceems-dev/ansible/pull/40)'
-      - 'patch: New ceems-dev/ceems upstream release 0.4.1! (https://github.com/ceems-dev/ansible/pull/41)'
-      - 'patch: New ceems-dev/ceems upstream release 0.4.1! (https://github.com/ceems-dev/ansible/pull/42)'
-      - 'patch: New ceems-dev/ceems upstream release 0.5.0! (https://github.com/ceems-dev/ansible/pull/44)'
-      - 'patch: New ceems-dev/ceems upstream release 0.5.0! (https://github.com/ceems-dev/ansible/pull/45)'
-      - 'patch: New ceems-dev/ceems upstream release 0.5.0! (https://github.com/ceems-dev/ansible/pull/46)'
-      - 'patch: New ceems-dev/ceems upstream release 0.5.2! (https://github.com/ceems-dev/ansible/pull/51)'
-      - 'patch: New ceems-dev/ceems upstream release 0.5.2! (https://github.com/ceems-dev/ansible/pull/52)'
-      - 'patch: New ceems-dev/ceems upstream release 0.5.2! (https://github.com/ceems-dev/ansible/pull/53)'
-      - 'patch: New ceems-dev/ceems upstream release 0.5.3! (https://github.com/ceems-dev/ansible/pull/54)'
-      - 'patch: New ceems-dev/ceems upstream release 0.5.3! (https://github.com/ceems-dev/ansible/pull/55)'
-      - 'patch: New ceems-dev/ceems upstream release 0.5.3! (https://github.com/ceems-dev/ansible/pull/56)'
-      - 'patch: New ceems-dev/ceems upstream release 0.6.0! (https://github.com/ceems-dev/ansible/pull/60)'
-      - 'patch: New ceems-dev/ceems upstream release 0.6.0! (https://github.com/ceems-dev/ansible/pull/61)'
-      - 'patch: Update ceems exporter and LB roles (https://github.com/ceems-dev/ansible/pull/47)'
-    release_date: '2024-08-27'
-  0.4.3:
-    changes:
-      trivial:
-      - 'patch: New NVIDIA/dcgm-exporter upstream release 4.2.0-4.1.0! (https://github.com/ceems-dev/ansible/pull/69)'
-      - 'patch: New NVIDIA/dcgm-exporter upstream release 4.2.3-4.1.3! (https://github.com/ceems-dev/ansible/pull/76)'
-      - 'patch: New NVIDIA/dcgm-exporter upstream release 4.2.3-4.2.0! (https://github.com/ceems-dev/ansible/pull/84)'
-      - 'patch: New mahendrapaipuri/ceems upstream release 0.7.1! (https://github.com/ceems-dev/ansible/pull/66)'
-      - 'patch: New mahendrapaipuri/ceems upstream release 0.7.1! (https://github.com/ceems-dev/ansible/pull/67)'
-      - 'patch: New mahendrapaipuri/ceems upstream release 0.7.1! (https://github.com/ceems-dev/ansible/pull/68)'
-      - 'patch: New mahendrapaipuri/ceems upstream release 0.7.2! (https://github.com/ceems-dev/ansible/pull/70)'
-      - 'patch: New mahendrapaipuri/ceems upstream release 0.7.2! (https://github.com/ceems-dev/ansible/pull/71)'
-      - 'patch: New mahendrapaipuri/ceems upstream release 0.7.2! (https://github.com/ceems-dev/ansible/pull/72)'
-      - 'patch: New mahendrapaipuri/ceems upstream release 0.8.0! (https://github.com/ceems-dev/ansible/pull/73)'
-      - 'patch: New mahendrapaipuri/ceems upstream release 0.8.0! (https://github.com/ceems-dev/ansible/pull/74)'
-      - 'patch: New mahendrapaipuri/ceems upstream release 0.8.0! (https://github.com/ceems-dev/ansible/pull/75)'
-      - 'patch: New mahendrapaipuri/ceems upstream release 0.9.0! (https://github.com/ceems-dev/ansible/pull/77)'
-      - 'patch: New mahendrapaipuri/ceems upstream release 0.9.0! (https://github.com/ceems-dev/ansible/pull/78)'
-      - 'patch: New mahendrapaipuri/ceems upstream release 0.9.0! (https://github.com/ceems-dev/ansible/pull/79)'
-      - 'patch: New mahendrapaipuri/ceems upstream release 0.9.1! (https://github.com/ceems-dev/ansible/pull/80)'
-      - 'patch: New mahendrapaipuri/ceems upstream release 0.9.1! (https://github.com/ceems-dev/ansible/pull/81)'
-      - 'patch: New mahendrapaipuri/ceems upstream release 0.9.1! (https://github.com/ceems-dev/ansible/pull/82)'
-      - 'patch: New mahendrapaipuri/ceems upstream release 0.9.1! (https://github.com/ceems-dev/ansible/pull/83)'
-      - 'refactor: Migrate to ceems-dev org (https://github.com/ceems-dev/ansible/pull/88)'
-    release_date: '2025-03-25'
-  1.0.0:
-    changes:
-      major_changes:
-      - 'major: Bump version to next sem ver (https://github.com/ceems-dev/ansible/pull/89)'
-      trivial:
-      - 'patch: New NVIDIA/dcgm-exporter upstream release 4.2.0-4.1.0! (https://github.com/ceems-dev/ansible/pull/69)'
-      - 'patch: New NVIDIA/dcgm-exporter upstream release 4.2.3-4.1.3! (https://github.com/ceems-dev/ansible/pull/76)'
-      - 'patch: New NVIDIA/dcgm-exporter upstream release 4.2.3-4.2.0! (https://github.com/ceems-dev/ansible/pull/84)'
-      - 'patch: New mahendrapaipuri/ceems upstream release 0.7.1! (https://github.com/ceems-dev/ansible/pull/66)'
-      - 'patch: New mahendrapaipuri/ceems upstream release 0.7.1! (https://github.com/ceems-dev/ansible/pull/67)'
-      - 'patch: New mahendrapaipuri/ceems upstream release 0.7.1! (https://github.com/ceems-dev/ansible/pull/68)'
-      - 'patch: New mahendrapaipuri/ceems upstream release 0.7.2! (https://github.com/ceems-dev/ansible/pull/70)'
-      - 'patch: New mahendrapaipuri/ceems upstream release 0.7.2! (https://github.com/ceems-dev/ansible/pull/71)'
-      - 'patch: New mahendrapaipuri/ceems upstream release 0.7.2! (https://github.com/ceems-dev/ansible/pull/72)'
-      - 'patch: New mahendrapaipuri/ceems upstream release 0.8.0! (https://github.com/ceems-dev/ansible/pull/73)'
-      - 'patch: New mahendrapaipuri/ceems upstream release 0.8.0! (https://github.com/ceems-dev/ansible/pull/74)'
-      - 'patch: New mahendrapaipuri/ceems upstream release 0.8.0! (https://github.com/ceems-dev/ansible/pull/75)'
-      - 'patch: New mahendrapaipuri/ceems upstream release 0.9.0! (https://github.com/ceems-dev/ansible/pull/77)'
-      - 'patch: New mahendrapaipuri/ceems upstream release 0.9.0! (https://github.com/ceems-dev/ansible/pull/78)'
-      - 'patch: New mahendrapaipuri/ceems upstream release 0.9.0! (https://github.com/ceems-dev/ansible/pull/79)'
-      - 'patch: New mahendrapaipuri/ceems upstream release 0.9.1! (https://github.com/ceems-dev/ansible/pull/80)'
-      - 'patch: New mahendrapaipuri/ceems upstream release 0.9.1! (https://github.com/ceems-dev/ansible/pull/81)'
-      - 'patch: New mahendrapaipuri/ceems upstream release 0.9.1! (https://github.com/ceems-dev/ansible/pull/82)'
-      - 'patch: New mahendrapaipuri/ceems upstream release 0.9.1! (https://github.com/ceems-dev/ansible/pull/83)'
-      - 'refactor: Migrate to ceems-dev org (https://github.com/ceems-dev/ansible/pull/88)'
-    release_date: '2025-07-22'
-  1.0.1:
-    changes:
-      trivial:
-      - 'chore(ci): Add dependabot config (https://github.com/ceems-dev/ansible/pull/138)'
-      - 'chore(deps): bump the actions-dependencies group across 1 directory with
-        5 updates (https://github.com/ceems-dev/ansible/pull/139)'
-      - 'docs: Update README (https://github.com/ceems-dev/ansible/pull/140)'
-      - 'patch: New NVIDIA/dcgm-exporter upstream release 4.4.0-4.5.0! (https://github.com/ceems-dev/ansible/pull/91)'
-      - 'patch: New NVIDIA/dcgm-exporter upstream release 4.4.1-4.5.2! (https://github.com/ceems-dev/ansible/pull/100)'
-      - 'patch: New NVIDIA/dcgm-exporter upstream release 4.4.1-4.6.0! (https://github.com/ceems-dev/ansible/pull/103)'
-      - 'patch: New NVIDIA/dcgm-exporter upstream release 4.4.2-4.7.1! (https://github.com/ceems-dev/ansible/pull/109)'
-      - 'patch: New NVIDIA/dcgm-exporter upstream release 4.5.1-4.8.0! (https://github.com/ceems-dev/ansible/pull/119)'
-      - 'patch: New NVIDIA/dcgm-exporter upstream release 4.5.2-4.8.1! (https://github.com/ceems-dev/ansible/pull/121)'
-      - 'patch: New NVIDIA/dcgm-exporter upstream release 4.5.3-4.8.2! (https://github.com/ceems-dev/ansible/pull/130)'
-      - 'patch: New benbjohnson/litestream upstream release 0.5.0! (https://github.com/ceems-dev/ansible/pull/101)'
-      - 'patch: New benbjohnson/litestream upstream release 0.5.1! (https://github.com/ceems-dev/ansible/pull/102)'
-      - 'patch: New benbjohnson/litestream upstream release 0.5.10! (https://github.com/ceems-dev/ansible/pull/128)'
-      - 'patch: New benbjohnson/litestream upstream release 0.5.11! (https://github.com/ceems-dev/ansible/pull/129)'
-      - 'patch: New benbjohnson/litestream upstream release 0.5.12! (https://github.com/ceems-dev/ansible/pull/134)'
-      - 'patch: New benbjohnson/litestream upstream release 0.5.2! (https://github.com/ceems-dev/ansible/pull/104)'
-      - 'patch: New benbjohnson/litestream upstream release 0.5.5! (https://github.com/ceems-dev/ansible/pull/111)'
-      - 'patch: New benbjohnson/litestream upstream release 0.5.6! (https://github.com/ceems-dev/ansible/pull/115)'
-      - 'patch: New benbjohnson/litestream upstream release 0.5.7! (https://github.com/ceems-dev/ansible/pull/120)'
-      - 'patch: New benbjohnson/litestream upstream release 0.5.8! (https://github.com/ceems-dev/ansible/pull/122)'
-      - 'patch: New benbjohnson/litestream upstream release 0.5.9! (https://github.com/ceems-dev/ansible/pull/123)'
-      - 'patch: New ceems-dev/ceems upstream release 0.11.0! (https://github.com/ceems-dev/ansible/pull/90)'
-      - 'patch: New ceems-dev/ceems upstream release 0.11.0! (https://github.com/ceems-dev/ansible/pull/92)'
-      - 'patch: New ceems-dev/ceems upstream release 0.11.0! (https://github.com/ceems-dev/ansible/pull/93)'
-      - 'patch: New ceems-dev/ceems upstream release 0.11.1! (https://github.com/ceems-dev/ansible/pull/94)'
-      - 'patch: New ceems-dev/ceems upstream release 0.11.1! (https://github.com/ceems-dev/ansible/pull/95)'
-      - 'patch: New ceems-dev/ceems upstream release 0.11.1! (https://github.com/ceems-dev/ansible/pull/96)'
-      - 'patch: New ceems-dev/ceems upstream release 0.11.2! (https://github.com/ceems-dev/ansible/pull/97)'
-      - 'patch: New ceems-dev/ceems upstream release 0.11.2! (https://github.com/ceems-dev/ansible/pull/98)'
-      - 'patch: New ceems-dev/ceems upstream release 0.11.2! (https://github.com/ceems-dev/ansible/pull/99)'
-      - 'patch: New ceems-dev/ceems upstream release 0.12.0! (https://github.com/ceems-dev/ansible/pull/105)'
-      - 'patch: New ceems-dev/ceems upstream release 0.12.0! (https://github.com/ceems-dev/ansible/pull/106)'
-      - 'patch: New ceems-dev/ceems upstream release 0.12.0! (https://github.com/ceems-dev/ansible/pull/107)'
-      - 'patch: New ceems-dev/ceems upstream release 0.12.1! (https://github.com/ceems-dev/ansible/pull/112)'
-      - 'patch: New ceems-dev/ceems upstream release 0.12.1! (https://github.com/ceems-dev/ansible/pull/113)'
-      - 'patch: New ceems-dev/ceems upstream release 0.12.1! (https://github.com/ceems-dev/ansible/pull/114)'
-      - 'patch: New ceems-dev/ceems upstream release 0.12.2! (https://github.com/ceems-dev/ansible/pull/116)'
-      - 'patch: New ceems-dev/ceems upstream release 0.12.2! (https://github.com/ceems-dev/ansible/pull/117)'
-      - 'patch: New ceems-dev/ceems upstream release 0.12.2! (https://github.com/ceems-dev/ansible/pull/118)'
-      - 'patch: New ceems-dev/ceems upstream release 0.12.3! (https://github.com/ceems-dev/ansible/pull/124)'
-      - 'patch: New ceems-dev/ceems upstream release 0.12.3! (https://github.com/ceems-dev/ansible/pull/125)'
-      - 'patch: New ceems-dev/ceems upstream release 0.12.3! (https://github.com/ceems-dev/ansible/pull/126)'
-      - 'patch: New ceems-dev/ceems upstream release 0.12.3! (https://github.com/ceems-dev/ansible/pull/127)'
-      - 'patch: New ceems-dev/ceems upstream release 0.13.0! (https://github.com/ceems-dev/ansible/pull/131)'
-      - 'patch: New ceems-dev/ceems upstream release 0.13.0! (https://github.com/ceems-dev/ansible/pull/132)'
-      - 'patch: New ceems-dev/ceems upstream release 0.13.0! (https://github.com/ceems-dev/ansible/pull/133)'
-      - 'patch: New ceems-dev/ceems upstream release 0.14.0! (https://github.com/ceems-dev/ansible/pull/135)'
-      - 'patch: New ceems-dev/ceems upstream release 0.14.0! (https://github.com/ceems-dev/ansible/pull/136)'
-      - 'patch: New ceems-dev/ceems upstream release 0.14.0! (https://github.com/ceems-dev/ansible/pull/137)'
-    release_date: '2025-09-05'
-  1.0.2:
-    changes:
-      trivial:
-      - 'chore(deps): bump actions/checkout from 6 to 7 in the actions-dependencies
-        group (https://github.com/ceems-dev/ansible/pull/147)'
-      - 'patch: New ceems-dev/ceems upstream release 0.14.1! (https://github.com/ceems-dev/ansible/pull/141)'
-      - 'patch: New ceems-dev/ceems upstream release 0.14.1! (https://github.com/ceems-dev/ansible/pull/142)'
-      - 'patch: New ceems-dev/ceems upstream release 0.14.1! (https://github.com/ceems-dev/ansible/pull/143)'
-      - 'patch: New ceems-dev/ceems upstream release 0.14.2! (https://github.com/ceems-dev/ansible/pull/144)'
-      - 'patch: New ceems-dev/ceems upstream release 0.14.2! (https://github.com/ceems-dev/ansible/pull/145)'
-      - 'patch: New ceems-dev/ceems upstream release 0.14.2! (https://github.com/ceems-dev/ansible/pull/146)'
-      - 'patch: New ceems-dev/ceems upstream release 0.14.3! (https://github.com/ceems-dev/ansible/pull/148)'
-      - 'patch: New ceems-dev/ceems upstream release 0.14.3! (https://github.com/ceems-dev/ansible/pull/149)'
-      - 'patch: New ceems-dev/ceems upstream release 0.14.3! (https://github.com/ceems-dev/ansible/pull/150)'
-    release_date: '2026-06-13'
-  1.1.0:
-    changes:
-      minor_changes:
-      - 'feat: Install ceems_tool along with ceems_api_server (https://github.com/ceems-dev/ansible/pull/151)'
-      trivial:
-      - 'chore(deps): bump actions/checkout from 6 to 7 in the actions-dependencies
-        group (https://github.com/ceems-dev/ansible/pull/147)'
-      - 'chore(deps): bump actions/checkout from 6 to 7 in the actions-dependencies
-        group (https://github.com/ceems-dev/ansible/pull/153)'
-      - 'patch: New ceems-dev/ceems upstream release 0.14.1! (https://github.com/ceems-dev/ansible/pull/141)'
-      - 'patch: New ceems-dev/ceems upstream release 0.14.1! (https://github.com/ceems-dev/ansible/pull/142)'
-      - 'patch: New ceems-dev/ceems upstream release 0.14.1! (https://github.com/ceems-dev/ansible/pull/143)'
-      - 'patch: New ceems-dev/ceems upstream release 0.14.2! (https://github.com/ceems-dev/ansible/pull/144)'
-      - 'patch: New ceems-dev/ceems upstream release 0.14.2! (https://github.com/ceems-dev/ansible/pull/145)'
-      - 'patch: New ceems-dev/ceems upstream release 0.14.2! (https://github.com/ceems-dev/ansible/pull/146)'
-      - 'patch: New ceems-dev/ceems upstream release 0.14.3! (https://github.com/ceems-dev/ansible/pull/148)'
-      - 'patch: New ceems-dev/ceems upstream release 0.14.3! (https://github.com/ceems-dev/ansible/pull/149)'
-      - 'patch: New ceems-dev/ceems upstream release 0.14.3! (https://github.com/ceems-dev/ansible/pull/150)'
-      - 'patch: New ceems-dev/ceems upstream release 0.14.3! (https://github.com/ceems-dev/ansible/pull/152)'
-      - 'refactor: Replace all deprecated calls to ansible_facts (https://github.com/ceems-dev/ansible/pull/154)'
-    release_date: '2026-06-27'
-  1.1.1:
-    changes:
-      trivial:
-      - 'patch: New benbjohnson/litestream upstream release 0.5.13! (https://github.com/ceems-dev/ansible/pull/155)'
-    release_date: '2026-07-01'
-  1.1.2:
-    release_date: '2026-07-02'
+        - 'bugfix: Minor fixes (https://github.com/ceems-dev/ansible/pull/4)'
+    release_date: '2024-02-29'
+  0.1.0:
+    release_date: '2024-02-26'
