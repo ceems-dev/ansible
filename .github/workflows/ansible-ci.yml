@@ -166,7 +166,7 @@ jobs:
           COLOR=15548997
           STATUS="Failed"
           EMOJI=":x:"
-          
+
           curl -H "Content-Type: application/json" \
                -d "{
                  \"embeds\": [{
