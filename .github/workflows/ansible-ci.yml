@@ -86,8 +86,8 @@ jobs:
             const { owner, repo } = context.repo;
             const eventName = context.eventName;
             let labels = new Array();
-            // For schedule jobs, add all roles to tests by fetching all possible labels
-            if (eventName === "schedule") {
+            // For schedule/manual jobs, add all roles to tests by fetching all possible labels
+            if (eventName === "schedule" || eventName === "workflow_dispatch") {
               const allLabels = await github.paginate(
                 github.rest.issues.listLabelsForRepo,
                 { owner, repo }
@@ -152,3 +152,39 @@ jobs:
     with:
       targets: ${{ needs.discover-ansible-tests.outputs.integration-tests }}
       ansible-core-versions: ${{ needs.discover-ansible-versions.outputs.versions }}
+
+  discord-notification:
+    runs-on: ubuntu-latest
+    needs:
+      - molecule
+    steps:
+      - name: Discord notification
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: |
+          if [ "${{ needs.molecule.result }}" == "success" ]; then
+            COLOR=5763719
+            STATUS="Success"
+            EMOJI=":white_check_mark:"
+          else
+            COLOR=15548997
+            STATUS="Failed"
+            EMOJI=":x:"
+          fi
+
+          curl -H "Content-Type: application/json" \
+               -d "{
+                 \"embeds\": [{
+                   \"title\": \"$EMOJI Ansible Molecule Testing - $STATUS\",
+                   \"description\": \"Molecule testing of Ansible roles in \`${{ github.repository }}\`\",
+                   \"color\": $COLOR,
+                   \"fields\": [
+                     {\"name\": \"Branch\", \"value\": \"\`${{ github.ref_name }}\`\", \"inline\": true},
+                     {\"name\": \"Commit\", \"value\": \"\`${{ github.sha }}\`\", \"inline\": true},
+                     {\"name\": \"Author\", \"value\": \"${{ github.actor }}\", \"inline\": true}
+                   ],
+                   \"url\": \"${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}\"
+                 }]
+               }" \
+               $DISCORD_WEBHOOK
