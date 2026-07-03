@@ -159,13 +159,19 @@ jobs:
       - molecule
     steps:
       - name: Discord notification
-        if: (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch') && failure()
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK_URL }}
         run: |
-          COLOR=15548997
-          STATUS="Failed"
-          EMOJI=":x:"
+          if [ "${{ needs.molecule.result }}" == "success" ]; then
+            COLOR=5763719
+            STATUS="Success"
+            EMOJI=":white_check_mark:"
+          else
+            COLOR=15548997
+            STATUS="Failed"
+            EMOJI=":x:"
+          fi
 
           curl -H "Content-Type: application/json" \
                -d "{
