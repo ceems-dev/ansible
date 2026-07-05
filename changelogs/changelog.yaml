@@ -4,6 +4,8 @@ releases:
   1.1.2:
     changes:
       trivial:
+        - 'chore(deps): bump ansible/ansible-lint from 26.4.0 to 26.6.0 in the actions-dependencies
+          group (https://github.com/ceems-dev/ansible/pull/158)'
         - 'patch: Add discord notification for schedule pipelines (https://github.com/ceems-dev/ansible/pull/157)'
     release_date: '2026-07-02'
   1.1.1:
