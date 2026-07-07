@@ -1,6 +1,11 @@
 ---
 ancestor:
 releases:
+  1.1.3:
+    changes:
+      trivial:
+        - 'patch: New benbjohnson/litestream upstream release 0.5.14! (https://github.com/ceems-dev/ansible/pull/162)'
+    release_date: '2026-07-07'
   1.1.2:
     changes:
       trivial:
