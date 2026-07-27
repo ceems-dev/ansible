@@ -4,6 +4,14 @@ ceems.Ansible Release Notes
 
 .. contents:: Topics
 
+v1.1.6
+======
+
+Bugfixes
+--------
+
+- fix: Remove deprecated verbs from molecule config (https://github.com/ceems-dev/ansible/pull/165)
+
 v1.1.5
 ======
 

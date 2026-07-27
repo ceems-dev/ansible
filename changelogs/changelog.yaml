@@ -1,6 +1,11 @@
 ---
 ancestor:
 releases:
+  1.1.6:
+    changes:
+      bugfixes:
+        - 'fix: Remove deprecated verbs from molecule config (https://github.com/ceems-dev/ansible/pull/165)'
+    release_date: '2026-07-27'
   1.1.5:
     changes:
       trivial:
