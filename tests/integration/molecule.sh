@@ -32,8 +32,8 @@ if [ -n "${expected_ansible_version}" ] && [ "${expected_ansible_version}" != "$
 fi
 
 # Install package requirements
-apt -y update
-apt -y install docker.io
+# apt -y update
+# apt -y install docker.io
 
 # Define config locations within collection
 export MOLECULE_FILE=$collection_root/.config/molecule/config.yml
