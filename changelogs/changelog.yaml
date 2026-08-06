@@ -5,6 +5,11 @@ releases:
     changes:
       bugfixes:
         - 'fix: Remove deprecated verbs from molecule config (https://github.com/ceems-dev/ansible/pull/165)'
+      trivial:
+        - 'patch: New ceems-dev/ceems upstream release 0.15.0! (https://github.com/ceems-dev/ansible/pull/169)'
+        - 'patch: New ceems-dev/ceems upstream release 0.15.0! (https://github.com/ceems-dev/ansible/pull/168)'
+        - 'patch: New benbjohnson/litestream upstream release 0.5.16! (https://github.com/ceems-dev/ansible/pull/167)'
+        - 'patch: New ceems-dev/ceems upstream release 0.15.0! (https://github.com/ceems-dev/ansible/pull/166)'
     release_date: '2026-07-27'
   1.1.5:
     changes:
