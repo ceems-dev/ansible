@@ -4,6 +4,9 @@ releases:
   1.1.7:
     changes:
       trivial:
+        - 'patch: New ceems-dev/ceems upstream release 0.15.1! (https://github.com/ceems-dev/ansible/pull/173)'
+        - 'patch: New ceems-dev/ceems upstream release 0.15.1! (https://github.com/ceems-dev/ansible/pull/172)'
+        - 'patch: New ceems-dev/ceems upstream release 0.15.1! (https://github.com/ceems-dev/ansible/pull/171)'
         - 'chore(deps): bump ansible/ansible-lint from 26.6.0 to 26.8.0 in the actions-dependencies
           group (https://github.com/ceems-dev/ansible/pull/170)'
     release_date: '2026-08-16'
