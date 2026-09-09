@@ -1,6 +1,11 @@
 ---
 ancestor:
 releases:
+  1.1.9:
+    changes:
+      trivial:
+        - 'chore: Replace deprecated github-action-build-collection workflow (https://github.com/ceems-dev/ansible/pull/176)'
+    release_date: '2026-09-09'
   1.1.8:
     changes:
       trivial:
