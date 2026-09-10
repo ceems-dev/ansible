@@ -4,6 +4,9 @@ releases:
   1.1.9:
     changes:
       trivial:
+        - 'patch: New ceems-dev/ceems upstream release 0.16.0! (https://github.com/ceems-dev/ansible/pull/179)'
+        - 'patch: New ceems-dev/ceems upstream release 0.16.0! (https://github.com/ceems-dev/ansible/pull/178)'
+        - 'patch: New ceems-dev/ceems upstream release 0.16.0! (https://github.com/ceems-dev/ansible/pull/177)'
         - 'chore: Replace deprecated github-action-build-collection workflow (https://github.com/ceems-dev/ansible/pull/176)'
     release_date: '2026-09-09'
   1.1.8:
