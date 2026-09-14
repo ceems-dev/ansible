@@ -1,6 +1,11 @@
 ---
 ancestor:
 releases:
+  1.1.10:
+    changes:
+      trivial:
+        - 'chore: Fix publish workflow (https://github.com/ceems-dev/ansible/pull/180)'
+    release_date: '2026-09-14'
   1.1.9:
     changes:
       trivial:
