@@ -4,6 +4,7 @@ releases:
   1.1.12:
     changes:
       trivial:
+        - 'chore: Remove debian 11 and add ubuntu 26 in molecule testing (https://github.com/ceems-dev/ansible/pull/183)'
         - 'patch: New NVIDIA/dcgm-exporter upstream release 4.8.4! (https://github.com/ceems-dev/ansible/pull/182)'
     release_date: '2026-09-21'
   1.1.11:
