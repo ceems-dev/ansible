@@ -1,6 +1,13 @@
 ---
 ancestor:
 releases:
+  1.1.13:
+    changes:
+      trivial:
+        - 'patch: New ceems-dev/ceems upstream release 0.16.1! (https://github.com/ceems-dev/ansible/pull/186)'
+        - 'patch: New ceems-dev/ceems upstream release 0.16.1! (https://github.com/ceems-dev/ansible/pull/185)'
+        - 'patch: New ceems-dev/ceems upstream release 0.16.1! (https://github.com/ceems-dev/ansible/pull/184)'
+    release_date: '2026-09-24'
   1.1.12:
     changes:
       trivial:
