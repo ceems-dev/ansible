@@ -4,6 +4,9 @@ ceems.Ansible Release Notes
 
 .. contents:: Topics
 
+v1.1.14
+=======
+
 v1.1.13
 =======
 
