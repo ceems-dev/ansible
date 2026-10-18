@@ -4,6 +4,8 @@ releases:
   1.1.14:
     changes:
       trivial:
+        - 'chore(deps): bump ansible/ansible-lint from 26.9.0 to 26.10.1 in the actions-dependencies
+          group (https://github.com/ceems-dev/ansible/pull/188)'
         - 'chore(deps): bump ansible/ansible-lint from 26.8.0 to 26.9.0 in the actions-dependencies
           group (https://github.com/ceems-dev/ansible/pull/187)'
     release_date: '2026-09-26'
