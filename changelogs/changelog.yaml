@@ -5,6 +5,7 @@ releases:
     changes:
       trivial:
         - 'chore: Bump ansible version to 2.22 in meta (https://github.com/ceems-dev/ansible/pull/197)'
+        - 'patch: New NVIDIA/dcgm-exporter upstream release 4.9.0! (https://github.com/ceems-dev/ansible/pull/196)'
         - 'patch: New benbjohnson/litestream upstream release 0.5.18! (https://github.com/ceems-dev/ansible/pull/195)'
         - 'patch: New ceems-dev/ceems upstream release 0.16.3! (https://github.com/ceems-dev/ansible/pull/194)'
         - 'patch: New ceems-dev/ceems upstream release 0.16.3! (https://github.com/ceems-dev/ansible/pull/193)'
