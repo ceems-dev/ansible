@@ -4,6 +4,7 @@ releases:
   1.1.15:
     changes:
       trivial:
+        - 'patch: New ceems-dev/ceems upstream release 0.16.3! (https://github.com/ceems-dev/ansible/pull/201)'
         - 'patch: New ceems-dev/ceems upstream release 0.16.3! (https://github.com/ceems-dev/ansible/pull/200)'
         - 'patch: New benbjohnson/litestream upstream release 0.5.18! (https://github.com/ceems-dev/ansible/pull/199)'
         - 'chore(deps): bump ansible/ansible-lint from 26.10.1 to 26.11.0 in the actions-dependencies
