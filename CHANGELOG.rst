@@ -4,6 +4,14 @@ ceems.Ansible Release Notes
 
 .. contents:: Topics
 
+v1.2.0
+======
+
+Minor Changes
+-------------
+
+- minor: Build dcgm-exporter using native `go build` (https://github.com/ceems-dev/ansible/pull/203)
+
 v1.1.15
 =======
 

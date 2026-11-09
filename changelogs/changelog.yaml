@@ -1,6 +1,11 @@
 ---
 ancestor:
 releases:
+  1.2.0:
+    changes:
+      minor_changes:
+        - 'minor: Build dcgm-exporter using native `go build` (https://github.com/ceems-dev/ansible/pull/203)'
+    release_date: '2026-11-09'
   1.1.15:
     changes:
       trivial:
