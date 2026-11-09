@@ -62,12 +62,10 @@
     - name: Compile dcgm-exporter binary
       become: false
       run_once: true
-      community.general.make:
-        chdir: /tmp/nvidia_dcgm_exporter
-        target: binary
-        params:
-          GO: /tmp/go/bin/go
-          GOLANG_VERSION: "{{ _golang_version }}"
+      ansible.builtin.command: /tmp/go/bin/go build -ldflags "-X main.BuildVersion={{ nvidia_dcgm_exporter_version }}" -trimpath
+      args:
+        chdir: /tmp/nvidia_dcgm_exporter/cmd/dcgm-exporter
+        creates: /tmp/nvidia_dcgm_exporter/cmd/dcgm-exporter/dcgm-exporter
       delegate_to: localhost
       environment:
         PATH: "/tmp/go/bin:{{ ansible_env.PATH }}"
