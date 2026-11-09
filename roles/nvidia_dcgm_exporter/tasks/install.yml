@@ -59,7 +59,7 @@
         version: "{{ nvidia_dcgm_exporter_version }}"
       delegate_to: localhost
 
-    - name: Compile dcgm-exporter binary
+    - name: Compile dcgm-exporter binary using go build
       become: false
       run_once: true
       ansible.builtin.command: /tmp/go/bin/go build -ldflags "-X main.BuildVersion={{ nvidia_dcgm_exporter_version }}" -trimpath
